@@ -44,7 +44,7 @@ function on_input(self, action_id, action)
 		--check if any bounding boxes were collided with
 		if gui.pick_node(gui.get_node("doorhandle_bounds"), x+collisionoffsetx, windowspecs.height-y+collisionoffsety) then
 			--open the door
-			msg.post("/main", "open")
+			msg.post("/main#script", "open")
 		end
 	end
 end
