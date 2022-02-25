@@ -1,8 +1,4 @@
 images {
-  image: "/assets/images/background.png"
-  sprite_trim_mode: SPRITE_TRIM_MODE_OFF
-}
-images {
   image: "/assets/images/logo.png"
   sprite_trim_mode: SPRITE_TRIM_MODE_OFF
 }
@@ -11,11 +7,15 @@ images {
   sprite_trim_mode: SPRITE_TRIM_MODE_OFF
 }
 images {
-  image: "/assets/images/porch-hi.png"
+  image: "/assets/images/porch.png"
   sprite_trim_mode: SPRITE_TRIM_MODE_OFF
 }
 images {
-  image: "/assets/images/porch.png"
+  image: "/assets/images/cursor.png"
+  sprite_trim_mode: SPRITE_TRIM_MODE_OFF
+}
+images {
+  image: "/assets/images/cursorhover.png"
   sprite_trim_mode: SPRITE_TRIM_MODE_OFF
 }
 margin: 0
