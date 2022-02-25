@@ -1,5 +1,7 @@
 [project]
 title = door
+developer = corot utvecklingar
+publisher = corot specifikationer AB
 
 [bootstrap]
 main_collection = /main/main.collectionc
