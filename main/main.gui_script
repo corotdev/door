@@ -25,10 +25,8 @@ function update(self, dt)
 	collisionoffsetx = 0
 	collisionoffsety = offsety+5
 	if gui.pick_node(gui.get_node("doorhandle_bounds"), x+collisionoffsetx, windowspecs.height-y+collisionoffsety) then
-		gui.set_texture(cursornode, "main")
 		gui.play_flipbook(cursornode, "cursorhover")
 	else
-		gui.set_texture(cursornode, "main")
 		gui.play_flipbook(cursornode, "cursor")
 	end
 end
