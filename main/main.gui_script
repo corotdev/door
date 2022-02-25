@@ -17,13 +17,13 @@ function update(self, dt)
 	--render cursor
 	x, y = defos.get_cursor_pos_view()
 	offsetx = 10
-	offsety = -40
+	offsety = -20
 	cursorpos = vmath.vector3(x+offsetx, windowspecs.height-y+offsety, 0)
 	gui.set_position(cursornode, cursorpos)
 
 	--check for collision
 	collisionoffsetx = 0
-	collisionoffsety = -35
+	collisionoffsety = offsety+5
 	if gui.pick_node(gui.get_node("doorhandle_bounds"), x+collisionoffsetx, windowspecs.height-y+collisionoffsety) then
 		gui.set_texture(cursornode, "main")
 		gui.play_flipbook(cursornode, "cursorhover")
