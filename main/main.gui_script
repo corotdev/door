@@ -1,4 +1,6 @@
 function init(self)
+	x, y, width, height = defos.get_window_size()
+	windowspecs = {width=width, height=height}
 	-- Add initialization code here
 	-- Learn more: https://defold.com/manuals/script/
 	-- Remove this function if not needed
@@ -11,9 +13,9 @@ function final(self)
 end
 
 function update(self, dt)
-	-- Add update code here
-	-- Learn more: https://defold.com/manuals/script/
-	-- Remove this function if not needed
+	x, y = defos.get_cursor_pos_view()
+	cursorpos = vmath.vector3(x, windowspecs.height-y-30, 0)
+	gui.set_position(gui.get_node("cursor"), cursorpos)
 end
 
 function on_message(self, message_id, message, sender)
