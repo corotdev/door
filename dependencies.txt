@@ -1,0 +1,9 @@
+[[Copy and paste into the game.project file under the [project] header
+
+Online dependencies:
+
+dependencies#0 = https://github.com/subsoap/defos/archive/master.zip
+
+Offline dependencies:
+
+dependencies#0 = http://localhost:8000/defos-master.zip
