@@ -2,8 +2,10 @@
 
 Online dependencies:
 
-dependencies#0 = https://github.com/subsoap/defos/archive/master.zip
+dependencies#0 = https://github.com/subsoap/defos/archive/master.zip <!-- get latest release link, do not rely on master branch
+[[hyper trails latest release]]
 
 Offline dependencies:
 
 dependencies#0 = http://localhost:8000/defos-master.zip
+dependencies#1 = http://localhost:8000/defold-hyper-trails-master.zip
