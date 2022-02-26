@@ -2,7 +2,7 @@
 title = door
 developer = corot utvecklingar
 publisher = corot specifikationer AB
-dependencies#0 = https://github.com/subsoap/defos/archive/master.zip
+dependencies#0 = http://localhost:8000/defos-master.zip
 
 [bootstrap]
 main_collection = /main/main.collectionc
