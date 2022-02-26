@@ -3,6 +3,7 @@ title = door
 developer = corot utvecklingar
 publisher = corot specifikationer AB
 dependencies#0 = http://localhost:8000/defos-master.zip
+dependencies#1 = http://localhost:8000/defold-hyper-trails-master.zip
 
 [bootstrap]
 main_collection = /main/main.collectionc
