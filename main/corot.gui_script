@@ -1,7 +1,17 @@
 function init(self)
-	-- Add initialization code here
-	-- Learn more: https://defold.com/manuals/script/
-	-- Remove this function if not needed
+	logo = gui.get_node("corotlogo")
+	text = gui.get_node("corottext")
+	--if not devmode then
+		--go.animate("/logo", "tint.w", go.PLAYBACK_ONCE_FORWARD, 1, go.EASING_INOUTCIRC, 2)
+		--go.animate("/text", "tint.w", go.PLAYBACK_ONCE_FORWARD, 1, go.EASING_INOUTCIRC, 2)
+	--end
+
+	gui.animate(logo, "color.w", 0, gui.EASING_INOUTCIRC, 0)
+	gui.animate(text, "color.w", 0, gui.EASING_INOUTCIRC, 0)
+	if not devmode then
+		gui.animate(logo, "color.w", 1, gui.EASING_INOUTCIRC, 2, gui.PLAYBACK_ONCE_PINGPONG)
+		gui.animate(text, "color.w", 1, gui.EASING_INOUTCIRC, 2, gui.PLAYBACK_ONCE_PINGPONG)
+	end
 end
 
 function final(self)

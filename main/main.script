@@ -1,14 +1,14 @@
-devmode = true
+devmode = false
 function init(self)
 	msg.post(".", "acquire_input_focus")
 	msg.post("@render:", "use_fixed_fit_projection", { near = -1, far = 1 })
 	defos.set_cursor_visible(false)
-	go.animate("/logo", "color.w", go.PLAYBACK_ONCE_FORWARD, 0, go.EASING_INOUTCIRC, 0)
-	go.animate("/text", "color.w", go.PLAYBACK_ONCE_FORWARD, 0, go.EASING_INOUTCIRC, 0)
-	if not devmode then
-		go.animate("/logo", "tint.w", go.PLAYBACK_ONCE_FORWARD, 1, go.EASING_INOUTCIRC, 2)
-		go.animate("/text", "tint.w", go.PLAYBACK_ONCE_FORWARD, 1, go.EASING_INOUTCIRC, 2)
-	end
+	-- go.animate("/logo", "color.w", go.PLAYBACK_ONCE_FORWARD, 0, go.EASING_INOUTCIRC, 0)
+	-- go.animate("/text", "color.w", go.PLAYBACK_ONCE_FORWARD, 0, go.EASING_INOUTCIRC, 0)
+	-- if not devmode then
+	-- 	go.animate("/logo", "tint.w", go.PLAYBACK_ONCE_FORWARD, 1, go.EASING_INOUTCIRC, 2)
+	-- 	go.animate("/text", "tint.w", go.PLAYBACK_ONCE_FORWARD, 1, go.EASING_INOUTCIRC, 2)
+	-- end
 end
 
 function on_input(self, action_id, action)
